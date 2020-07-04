@@ -3,7 +3,6 @@ const nuke = new discord.Client();
 const prefix = "ms!";
 var isAdmin = false;
 var trollMode = false;
-const token = "NzI4NzA0MjQ5NTg3OTU3ODIw.Xv_uyA.ve_nXV4aKSIs3uzLMoNmIX1DnKg";
 const resetMessage = "Hello, and welcome! :heart: Please read over the rules in <#711300534631530621>, choose your roles in <#711300534631530619>, write an introduction in <#711300534631530620> Ping any Admin once you have completed all of these steps, do not DM them.";
 var isBotMessage = false;
 
@@ -99,4 +98,4 @@ if(msg.member.roles.find(r => r.name === "Admin") || msg.member.roles.find(r => 
 	}
 }
 });
-nuke.login("NzI4NzA0MjQ5NTg3OTU3ODIw.XwDGIw.ILT7g_vXUHUAeHilfFoRLk6uI2w");
+nuke.login(process.env.token);
