@@ -99,4 +99,4 @@ if(msg.member.roles.find(r => r.name === "Admin") || msg.member.roles.find(r => 
 	}
 }
 });
-nuke.login("NzI4NzA0MjQ5NTg3OTU3ODIw.Xv_v-Q.-RcBRTVRiH846zWSC7--pFEL8D0");
+nuke.login("NzI4NzA0MjQ5NTg3OTU3ODIw.XwDGIw.ILT7g_vXUHUAeHilfFoRLk6uI2w");
