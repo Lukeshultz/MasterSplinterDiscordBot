@@ -2,7 +2,7 @@ const discord = require("discord.js");
 const nuke = new discord.Client();
 const prefix = "ms!";
 var isAdmin = false;
-const token = "NzI4NzA0MjQ5NTg3OTU3ODIw.Xv_uyA.ve_nXV4aKSIs3uzLMoNmIX1DnKg";
+
 nuke.on('ready', () =>
 {
 //nuke.channels.find(x => x.name === 'ask-to-get-accepted').send('Hello! I\'m now connected!');
@@ -59,4 +59,4 @@ if(msg.member.roles.find(r => r.name === "Admin") || msg.member.roles.find(r => 
 	}
 }
 });
-nuke.login(token);
+nuke.login(process.env.token);
