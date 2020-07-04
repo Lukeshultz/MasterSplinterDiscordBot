@@ -1,51 +1,150 @@
 {
-  "requires": true,
-  "lockfileVersion": 1,
+  "_from": "discord.js",
+  "_id": "discord.js@11.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-tGhV5xaZXE3Z+4uXJb3hYM6gQ1NmnSxp9PClcsSAYFVRzH6AJH74040mO3afPDMWEAlj8XsoPXXTJHTxesqcGw==",
+  "_location": "/discord.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "discord.js",
+    "name": "discord.js",
+    "escapedName": "discord.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/discord.js/-/discord.js-11.5.1.tgz",
+  "_shasum": "910fb9f6410328581093e044cafb661783a4d9e8",
+  "_spec": "discord.js",
+  "_where": "C:\\Users\\owner\\Desktop\\Discord Nuke Bot",
+  "author": {
+    "name": "Amish Shah",
+    "email": "amishshah.2k@gmail.com"
+  },
+  "browser": {
+    "ws": false,
+    "uws": false,
+    "@discordjs/uws": false,
+    "erlpack": false,
+    "prism-media": false,
+    "opusscript": false,
+    "node-opus": false,
+    "tweetnacl": false,
+    "sodium": false,
+    "src/sharding/Shard.js": false,
+    "src/sharding/ShardClientUtil.js": false,
+    "src/sharding/ShardingManager.js": false,
+    "src/client/voice/dispatcher/StreamDispatcher.js": false,
+    "src/client/voice/opus/BaseOpusEngine.js": false,
+    "src/client/voice/opus/NodeOpusEngine.js": false,
+    "src/client/voice/opus/OpusEngineList.js": false,
+    "src/client/voice/opus/OpusScriptEngine.js": false,
+    "src/client/voice/pcm/ConverterEngine.js": false,
+    "src/client/voice/pcm/ConverterEngineList.js": false,
+    "src/client/voice/pcm/FfmpegConverterEngine.js": false,
+    "src/client/voice/player/AudioPlayer.js": false,
+    "src/client/voice/receiver/VoiceReadable.js": false,
+    "src/client/voice/receiver/VoiceReceiver.js": false,
+    "src/client/voice/util/Secretbox.js": false,
+    "src/client/voice/util/SecretKey.js": false,
+    "src/client/voice/util/VolumeInterface.js": false,
+    "src/client/voice/ClientVoiceManager.js": false,
+    "src/client/voice/VoiceBroadcast.js": false,
+    "src/client/voice/VoiceConnection.js": false,
+    "src/client/voice/VoiceUDPClient.js": false,
+    "src/client/voice/VoiceWebSocket.js": false
+  },
+  "bugs": {
+    "url": "https://github.com/discordjs/discord.js/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
-    "async-limiter": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.0.tgz",
-      "integrity": "sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg=="
+    "long": "^4.0.0",
+    "prism-media": "^0.0.3",
+    "snekfetch": "^3.6.4",
+    "tweetnacl": "^1.0.0",
+    "ws": "^6.0.0"
+  },
+  "deprecated": false,
+  "description": "A powerful library for interacting with the Discord API",
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "discord.js-docgen": "github:discordjs/docgen",
+    "eslint": "^5.4.0",
+    "parallel-webpack": "^2.3.0",
+    "tslint": "^3.15.1",
+    "tslint-config-typings": "^0.2.4",
+    "typescript": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.17.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://github.com/discordjs/discord.js#readme",
+  "keywords": [
+    "discord",
+    "api",
+    "bot",
+    "client",
+    "node",
+    "discordapp"
+  ],
+  "license": "Apache-2.0",
+  "main": "./src/index",
+  "name": "discord.js",
+  "peerDependencies": {
+    "bufferutil": "^4.0.0",
+    "erlpack": "discordapp/erlpack",
+    "libsodium-wrappers": "^0.7.3",
+    "node-opus": "^0.2.7",
+    "opusscript": "^0.0.6",
+    "sodium": "^2.0.3",
+    "@discordjs/uws": "^10.149.0"
+  },
+  "peerDependenciesMeta": {
+    "bufferutil": {
+      "optional": true
     },
-    "discord.js": {
-      "version": "11.5.1",
-      "resolved": "https://registry.npmjs.org/discord.js/-/discord.js-11.5.1.tgz",
-      "integrity": "sha512-tGhV5xaZXE3Z+4uXJb3hYM6gQ1NmnSxp9PClcsSAYFVRzH6AJH74040mO3afPDMWEAlj8XsoPXXTJHTxesqcGw==",
-      "requires": {
-        "long": "^4.0.0",
-        "prism-media": "^0.0.3",
-        "snekfetch": "^3.6.4",
-        "tweetnacl": "^1.0.0",
-        "ws": "^6.0.0"
-      }
+    "erlpack": {
+      "optional": true
     },
-    "long": {
-      "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/long/-/long-4.0.0.tgz",
-      "integrity": "sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA=="
+    "node-opus": {
+      "optional": true
     },
-    "prism-media": {
-      "version": "0.0.3",
-      "resolved": "https://registry.npmjs.org/prism-media/-/prism-media-0.0.3.tgz",
-      "integrity": "sha512-c9KkNifSMU/iXT8FFTaBwBMr+rdVcN+H/uNv1o+CuFeTThNZNTOrQ+RgXA1yL/DeLk098duAeRPP3QNPNbhxYQ=="
+    "opusscript": {
+      "optional": true
     },
-    "snekfetch": {
-      "version": "3.6.4",
-      "resolved": "https://registry.npmjs.org/snekfetch/-/snekfetch-3.6.4.tgz",
-      "integrity": "sha512-NjxjITIj04Ffqid5lqr7XdgwM7X61c/Dns073Ly170bPQHLm6jkmelye/eglS++1nfTWktpP6Y2bFXjdPlQqdw=="
+    "sodium": {
+      "optional": true
     },
-    "tweetnacl": {
-      "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-1.0.1.tgz",
-      "integrity": "sha512-kcoMoKTPYnoeS50tzoqjPY3Uv9axeuuFAZY9M/9zFnhoVvRfxz9K29IMPD7jGmt2c8SW7i3gT9WqDl2+nV7p4A=="
+    "libsodium-wrappers": {
+      "optional": true
     },
-    "ws": {
-      "version": "6.2.1",
-      "resolved": "https://registry.npmjs.org/ws/-/ws-6.2.1.tgz",
-      "integrity": "sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==",
-      "requires": {
-        "async-limiter": "~1.0.0"
-      }
+    "uws": {
+      "optional": true
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discordjs/discord.js.git"
+  },
+  "runkitExampleFilename": "./docs/examples/ping.js",
+  "scripts": {
+    "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
+    "docs:test": "docgen --source src --custom docs/index.yml",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "lint:typings": "tslint typings/index.d.ts typings/discord.js-test.ts",
+    "test": "npm run lint && npm run docs:test",
+    "webpack": "parallel-webpack"
+  },
+  "types": "./typings/index.d.ts",
+  "version": "11.5.1"
 }
