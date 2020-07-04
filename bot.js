@@ -1,17 +1,17 @@
 const discord = require("discord.js");
-const bot = new discord.Client();
+const nuke = new discord.Client();
 const prefix = "ms!";
 var isAdmin = false;
-
-bot.on('ready', () =>
+const token = "NzI4NzA0MjQ5NTg3OTU3ODIw.Xv_uyA.ve_nXV4aKSIs3uzLMoNmIX1DnKg";
+nuke.on('ready', () =>
 {
-//bot.channels.find(x => x.name === 'ask-to-get-accepted').send('Hello! I\'m now connected!');
+//nuke.channels.find(x => x.name === 'ask-to-get-accepted').send('Hello! I\'m now connected!');
 console.log(" ")
-console.log(`${bot.user.tag} is online.`);
-bot.user.setPresence({ game: { name: `Making people read the rules!` }, type: 0 });
+console.log(`${nuke.user.tag} is online.`);
+nuke.user.setPresence({ game: { name: `Making people read the rules!` }, type: 0 });
 });
 
-bot.on('message', (msg)=>{
+nuke.on('message', (msg)=>{
 	
 isAdmin = false;	
 	
@@ -59,4 +59,4 @@ if(msg.member.roles.find(r => r.name === "Admin") || msg.member.roles.find(r => 
 	}
 }
 });
-bot.login("NzI4NzA0MjQ5NTg3OTU3ODIw.Xv-dyg.-1l27vKQnmt1_w1ZmI-ZbMFVmqI");
+nuke.login(token);
