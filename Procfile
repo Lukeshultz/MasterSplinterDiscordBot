@@ -1,1 +1,1 @@
-Worker: node nuke.js
+Worker: node start.bat
